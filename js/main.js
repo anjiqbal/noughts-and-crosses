@@ -1,5 +1,6 @@
-let squares = document.querySelectorAll('button')
+let squares = document.querySelectorAll('.board')
 squares.forEach(square => square.addEventListener('click', play))
+document.querySelector('#reset').addEventListener('click', reset)
 let boardArray = ['x', 'o', 'x', 'o', 'x', 'o', 'x', 'o', 'x']
 
 let counter = 0
@@ -50,5 +51,12 @@ function checkForYWin() {
     } else {
         return false
     }
+}
+
+function reset() {
+    squares.forEach(square => square.innerText = '')
+    squares.forEach(square => square.addEventListener('click', play))
+    document.querySelector('h2').innerText = ''
+    counter = 0
 }
 

@@ -33,7 +33,7 @@ body {
   width: 300px;
 }
 
-button {
+.board {
   height: 100px;
   width: 100px;
   background-color: orange;
@@ -44,7 +44,8 @@ button {
  padding:0;
 }
 
-button:hover {
+button:hover,
+#reset:hover {
   background-color: darkorange;
 }
 
@@ -58,6 +59,21 @@ h1, h2 {
   margin: 80px 0 0 0;
   text-align: center;
 }
+
+h2 {
+  height: 50px;
+}
+
+#reset {
+  display: block;
+  margin: 20px auto;
+  background-color: orange;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+}
+
+
 
 /******************************************
 /* LAYOUT
